@@ -1,0 +1,92 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+    private String tea;// ethiopian tea
+    private String coffee;
+    private String sugar;
+    private int countTea;
+    
+    // getters
+    public String getTea(){
+        this.countTea=countTea-1;
+        return tea;
+    }
+    public String getCoffee(){
+        return coffee;
+    }
+    public String getSugar(){
+        return sugar;
+    }
+    // setters 
+    public void setTeaCount(int count){
+        this.countTea +=count;
+    }
+    public void setTea(){
+        this.tea ="ethiopian tea";
+        
+    }
+     public void setCoffee(){
+        this.coffee ="ethiopian coffee";
+        
+    }
+     public void setSuger(){
+        this.sugar="ethiopian sugar";
+        
+    }
+    public String toString(){
+        return tea + "  \n"+ coffee + "\n" + sugar ;
+            
+    }
+    
+    
+    public static void main(String[] args){
+        
+        Main walmart = new Main();
+        walmart.setTea();
+        walmart.setSuger();
+        walmart.setCoffee();
+        //
+        System.out.println(walmart.toString());
+        walmart.setTeaCount(10);
+        walmart.getTea();
+        walmart.getTea();
+        System.out.println(walmart.countTea);
+        walmart.setTeaCount(10);
+        System.out.println(walmart.countTea);
+        // if while dowhile if else // switch 
+        String howManyTea="number is different";
+        if(walmart.countTea==18){
+            System.out.println("yes it is "+ walmart.countTea);
+            
+        }else if (3>2) {
+            System.out.println("yes");
+        }
+        else{
+            System.out.println(howManyTea);
+        }
+        //
+        int i=10;
+        while(i>0){
+            i=i-1;
+            System.out.print(i+" ");
+            
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+
+}
