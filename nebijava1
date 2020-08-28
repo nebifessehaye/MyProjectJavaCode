@@ -1,0 +1,52 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	private string sugar;//ethiopean sugar
+	     private string coffee;
+	     private int countsugar;
+	     
+	// getters
+	 public string getsugar(){
+	   this.countsugar=countsugar-2;
+	    return sugar;
+	}
+	 public string getcoffee(){
+	    return coffee;
+	}
+	  //setters
+	public void setsugarcount(int count){
+	     this.countsugar +=count;   
+	}
+	 public void setsugar(){
+	    this.sugar ="ethipean sugar";
+	}
+	  public void setcoffee(){
+	      this.coffee ="ethiopean coffee";
+    }
+      public string tostring(){
+          return sugar +"\n" +coffee;
+    }
+  public static void main(String[]args){
+  }
+       main walmart =new main();
+       walmart.setsugar();
+       walmart.setcoffee();
+    System.out.println(walmart.tostring());
+       walmart.setsugarcount(15);
+       walmart.getsugar();
+       walmart.getsugar();
+    System.out.println(walmart.countsugar);
+       walmart.setsugarcount(15);
+    System.out.println(walmart.countsugar);
+     // if while dowhile if else// switch
+    String howmanysugar="numbr is different";
+    
+    
+       
