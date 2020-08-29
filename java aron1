@@ -1,0 +1,99 @@
+import java.util.ArrayList;
+
+/******************************************************************************
+ * 
+ * Online Java Compiler. Code, Compile, Run and Debug java program online. Write
+ * your code in this editor and press "Run" button to execute it.
+ * 
+ *******************************************************************************/
+
+public class Main { // fields
+	private String sugar;// ethiopean sugar
+	private String coffee;
+	private int countsugar;// 15-->13-->11
+
+	// getters
+	public String getsugar() {
+		this.countsugar = countsugar - 2;
+		return sugar;
+	}
+
+	public String getcoffee() {
+		return coffee;
+	}
+
+	// setters
+	public void setsugarcount(int count) {
+		this.countsugar += count;// 11+15=26
+	}
+
+	public void setsugar() {
+		this.sugar = "ethipean sugar";
+	}
+
+	public void setcoffee() {
+		this.coffee = "ethiopean coffee";
+	}
+
+	public String tostring() {
+		return sugar + "\n" + coffee;
+	}
+
+	public static void main(String[] args) {
+
+		Main walmart = new Main();
+		Main safeway = new Main();
+		// ==============================================
+		safeway.setsugar();
+		safeway.setcoffee();
+
+		walmart.setsugar();
+		walmart.setcoffee();
+		System.out.println(walmart.tostring());
+
+		walmart.setsugarcount(15);
+		walmart.getsugar();// 13
+		walmart.getsugar();// 11
+		System.out.println(walmart.countsugar);// 11
+		walmart.setsugarcount(15);
+		System.out.println(walmart.countsugar);// 26
+		// if while dowhile if else// switch
+		String howmanysugar = "numbr is different";
+		// =================================================
+
+		// object storing in an array
+		// System.out.println("============storing object using array
+		// ===============================");
+		Main[] arrayMain = new Main[2];// [walmart][safeway]
+		arrayMain[0] = walmart;
+		arrayMain[1] = safeway;
+		// object ArrayList
+		// System.out.println("============storing object using array list
+		// ===============================");
+		ArrayList<Main> arrayListMain = new ArrayList<Main>();
+		arrayListMain.add(safeway);
+		arrayListMain.add(walmart);// [safeway][walmart]
+
+		//
+		System.out.println("============using for loop===============================");
+		// forloop
+		for (int i = 0; i < 2; i++) {
+			System.out.println(arrayMain[i].tostring());
+		}
+		System.out.println("============using for while loop===============================");
+		// while loop
+		int j = 0;
+		while (j < 2) {
+			System.out.println(arrayMain[j].tostring());
+			j++;
+		}
+		System.out.println("============using if ===============================");
+		if (1 > 0) {
+			System.out.println(" one is greater than zeero");
+		} else {
+			System.out.println(" one is greater than zero this else block will not excuite ");
+		}
+
+	}
+
+}
